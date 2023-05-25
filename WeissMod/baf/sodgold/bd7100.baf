@@ -1,0 +1,21 @@
+IF
+  GlobalLT("chapter","global",9)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    ClearAllActions()
+    FadeToColor([0.0],0)
+    AddJournalEntry(259653,INFO)
+    SmallWait(5)
+    SetGlobal("bd_npc_camp_chapter","global",3)
+    IncrementChapter("SODTXT9")
+    AddJournalEntry(256368,INFO)
+    AddXPObject(Player1,11000)
+    AddXPObject(Player2,11000)
+    AddXPObject(Player3,11000)
+    AddXPObject(Player4,11000)
+    AddXPObject(Player5,11000)
+    AddXPObject(Player6,11000)
+    SetCutSceneLite(TRUE)
+    EndCutSceneMode()
+END

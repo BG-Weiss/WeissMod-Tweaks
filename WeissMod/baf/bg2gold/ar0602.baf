@@ -1,0 +1,12 @@
+IF
+	Global("BG2_HAS_TAKEN_GOLD","GLOBAL",1)
+	Global("BG2_HAS_RETURNED_GOLD","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("BG2_HAS_RETURNED_GOLD","GLOBAL",1)
+		GiveObjectGoldGlobal("BG2_TAKEN_GOLD","GLOBAL","Picture 1")
+		SmallWait(5)
+		SetInterrupt(TRUE)
+		Continue()
+END

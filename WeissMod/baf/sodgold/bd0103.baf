@@ -1,0 +1,30 @@
+IF
+	!Global("BD_RESTORE_GOLD","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("BD_RESTORE_GOLD","GLOBAL",1)
+		AddGlobals("BD_TAKEN_GOLD","BD_EXTRA_GOLD")
+		ActionOverride("PlayerChest00",CreateItem("DWNOTE99",0,0,0))  // Note
+		GiveObjectGoldGlobal("BD_TAKEN_GOLD","GLOBAL","PlayerChest00")
+		SmallWait(5)
+		SetGlobal("BD_TAKEN_GOLD","GLOBAL",0)
+		SetInterrupt(TRUE)
+		Continue()
+END
+
+IF
+  Global("BD_PARTY_ITEMS","BD0103",0)
+  GlobalLT("BD_PLOT","GLOBAL",51)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("BD_PARTY_ITEMS","BD0103",1)
+    ActionOverride("PlayerChest00",TakeCreatureItems(Player1,ALL))
+    ActionOverride("PlayerChest00",TakeCreatureItems(Player2,ALL))
+    ActionOverride("PlayerChest00",TakeCreatureItems(Player3,ALL))
+    ActionOverride("PlayerChest00",TakeCreatureItems(Player4,ALL))
+    ActionOverride("PlayerChest00",TakeCreatureItems(Player5,ALL))
+    ActionOverride("PlayerChest00",TakeCreatureItems(Player6,ALL))
+    SetInterrupt(TRUE)
+END

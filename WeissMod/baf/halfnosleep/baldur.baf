@@ -1,0 +1,377 @@
+IF
+	GlobalTimerExpired("weiss_gold_rest_increase","GLOBAL")
+THEN
+RESPONSE #100
+	DisplayString(Myself,~Times are getting tougher. It will cost more gold to rest now.~)
+	IncrementGlobal("weiss_gold_increases","GLOBAL",1)
+	SetGlobalTimer("weiss_gold_rest_increase","GLOBAL",144000)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(25)
+	Global("weiss_gold_increases","GLOBAL",0)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(24)
+	Global("weiss_gold_increases","GLOBAL",0)
+THEN
+RESPONSE #100
+	TakePartyGold(25)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(250)
+	Global("weiss_gold_increases","GLOBAL",1)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(249)
+	Global("weiss_gold_increases","GLOBAL",1)
+THEN
+RESPONSE #100
+	TakePartyGold(250)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(500)
+	Global("weiss_gold_increases","GLOBAL",2)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(499)
+	Global("weiss_gold_increases","GLOBAL",2)
+THEN
+RESPONSE #100
+	TakePartyGold(500)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(750)
+	Global("weiss_gold_increases","GLOBAL",3)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(749)
+	Global("weiss_gold_increases","GLOBAL",3)
+THEN
+RESPONSE #100
+	TakePartyGold(750)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(1000)
+	Global("weiss_gold_increases","GLOBAL",4)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(999)
+	Global("weiss_gold_increases","GLOBAL",4)
+THEN
+RESPONSE #100
+	TakePartyGold(1000)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(1500)
+	Global("weiss_gold_increases","GLOBAL",5)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(1499)
+	Global("weiss_gold_increases","GLOBAL",5)
+THEN
+RESPONSE #100
+	TakePartyGold(1500)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(2250)
+	Global("weiss_gold_increases","GLOBAL",6)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(2249)
+	Global("weiss_gold_increases","GLOBAL",6)
+THEN
+RESPONSE #100
+	TakePartyGold(2250)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(3000)
+	Global("weiss_gold_increases","GLOBAL",7)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(2999)
+	Global("weiss_gold_increases","GLOBAL",7)
+THEN
+RESPONSE #100
+	TakePartyGold(3000)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(3750)
+	Global("weiss_gold_increases","GLOBAL",8)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(3749)
+	Global("weiss_gold_increases","GLOBAL",8)
+THEN
+RESPONSE #100
+	TakePartyGold(3750)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(4500)
+	Global("weiss_gold_increases","GLOBAL",9)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(4499)
+	Global("weiss_gold_increases","GLOBAL",9)
+THEN
+RESPONSE #100
+	TakePartyGold(4500)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(5500)
+	Global("weiss_gold_increases","GLOBAL",10)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(5499)
+	Global("weiss_gold_increases","GLOBAL",10)
+THEN
+RESPONSE #100
+	TakePartyGold(5500)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(6500)
+	Global("weiss_gold_increases","GLOBAL",11)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(6499)
+	Global("weiss_gold_increases","GLOBAL",11)
+THEN
+RESPONSE #100
+	TakePartyGold(6500)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(7500)
+	Global("weiss_gold_increases","GLOBAL",12)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(7499)
+	Global("weiss_gold_increases","GLOBAL",12)
+THEN
+RESPONSE #100
+	TakePartyGold(7500)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(8750)
+	Global("weiss_gold_increases","GLOBAL",13)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(8749)
+	Global("weiss_gold_increases","GLOBAL",13)
+THEN
+RESPONSE #100
+	TakePartyGold(8750)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(10000)
+	Global("weiss_gold_increases","GLOBAL",14)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(9999)
+	Global("weiss_gold_increases","GLOBAL",14)
+THEN
+RESPONSE #100
+	TakePartyGold(10000)
+	Continue()
+END
+IF
+	PartyRested()
+	PartyGoldLT(12500)
+	GlobalGT("weiss_gold_increases","GLOBAL",14)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+Continue()
+END
+IF
+	PartyRested()
+	PartyGoldGT(12499)
+	GlobalGT("weiss_gold_increases","GLOBAL",14)
+THEN
+RESPONSE #100
+	TakePartyGold(12500)
+	Continue()
+END

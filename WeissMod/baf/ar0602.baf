@@ -1,0 +1,9 @@
+IF
+	!Global("weiss_timer_started","GLOBAL",1)
+THEN
+RESPONSE #100
+	SetGlobal("weiss_timer_started","GLOBAL",1)
+	SetGlobal("weiss_gold_increases","GLOBAL",0)
+	SetGlobalTimer("weiss_gold_rest_increase","GLOBAL",144000)
+	Continue()
+END

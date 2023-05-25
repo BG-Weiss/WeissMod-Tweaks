@@ -1,0 +1,83 @@
+//My Item Mod
+
+//Part 1 (header section)
+BACKUP ~WeissMod/backup~
+AUTHOR ~cjweiss.com~
+LANGUAGE ~English~ ~WeissMod/english~ ~WeissMod/english/english.tra~
+
+BEGIN ~Half cost with no added sleep~
+SUBCOMPONENT ~Pay gold to rest based on elapsed time~
+EXTEND_TOP ~baldur.bcs~  ~WeissMod/baf/halfnosleep/baldur.BAF~    
+EXTEND_TOP ~bdbaldur.bcs~  ~WeissMod/baf/halfnosleep/baldur.BAF~ 
+EXTEND_TOP ~bg2600.bcs~  ~WeissMod/baf/bg2600.BAF~
+EXTEND_TOP ~ar0602.bcs~  ~WeissMod/baf/ar0602.BAF~
+EXTEND_TOP ~bg2000.bcs~  ~WeissMod/baf/bg2000.BAF~
+BEGIN ~Half cost with 4 hours of beauty sleep~
+SUBCOMPONENT ~Pay gold to rest based on elapsed time~
+EXTEND_TOP ~baldur.bcs~  ~WeissMod/baf/halfsleep/baldur.BAF~    
+EXTEND_TOP ~bdbaldur.bcs~  ~WeissMod/baf/halfsleep/baldur.BAF~ 
+EXTEND_TOP ~bg2600.bcs~  ~WeissMod/baf/bg2600.BAF~
+EXTEND_TOP ~ar0602.bcs~  ~WeissMod/baf/ar0602.BAF~
+EXTEND_TOP ~bg2000.bcs~  ~WeissMod/baf/bg2000.BAF~
+BEGIN ~Normal cost with no added sleep~
+SUBCOMPONENT ~Pay gold to rest based on elapsed time~
+EXTEND_TOP ~baldur.bcs~  ~WeissMod/baf/normalnosleep/baldur.BAF~    
+EXTEND_TOP ~bdbaldur.bcs~  ~WeissMod/baf/normalnosleep/baldur.BAF~ 
+EXTEND_TOP ~bg2600.bcs~  ~WeissMod/baf/bg2600.BAF~
+EXTEND_TOP ~ar0602.bcs~  ~WeissMod/baf/ar0602.BAF~
+EXTEND_TOP ~bg2000.bcs~  ~WeissMod/baf/bg2000.BAF~
+BEGIN ~Normal cost with 4 hours of beauty sleep (recommended)~
+SUBCOMPONENT ~Pay gold to rest based on elapsed time~
+EXTEND_TOP ~baldur.bcs~  ~WeissMod/baf/normalsleep/baldur.BAF~  
+EXTEND_TOP ~bdbaldur.bcs~  ~WeissMod/baf/normalsleep/baldur.BAF~   
+EXTEND_TOP ~bg2600.bcs~  ~WeissMod/baf/bg2600.BAF~
+EXTEND_TOP ~ar0602.bcs~  ~WeissMod/baf/ar0602.BAF~
+EXTEND_TOP ~bg2000.bcs~  ~WeissMod/baf/bg2000.BAF~
+BEGIN ~Double cost with no added sleep~
+SUBCOMPONENT ~Pay gold to rest based on elapsed time~
+EXTEND_TOP ~baldur.bcs~  ~WeissMod/baf/doublenosleep/baldur.BAF~   
+EXTEND_TOP ~bdbaldur.bcs~  ~WeissMod/baf/doublenosleep/baldur.BAF~  
+EXTEND_TOP ~bg2600.bcs~  ~WeissMod/baf/bg2600.BAF~
+EXTEND_TOP ~ar0602.bcs~  ~WeissMod/baf/ar0602.BAF~
+EXTEND_TOP ~bg2000.bcs~  ~WeissMod/baf/bg2000.BAF~
+BEGIN ~Double cost with with 4 hours of beauty sleep~
+SUBCOMPONENT ~Pay gold to rest based on elapsed time~
+EXTEND_TOP ~baldur.bcs~  ~WeissMod/baf/doublesleep/baldur.BAF~    
+EXTEND_TOP ~bdbaldur.bcs~  ~WeissMod/baf/doublesleep/baldur.BAF~ 
+EXTEND_TOP ~bg2600.bcs~  ~WeissMod/baf/bg2600.BAF~
+EXTEND_TOP ~ar0602.bcs~  ~WeissMod/baf/ar0602.BAF~
+EXTEND_TOP ~bg2000.bcs~  ~WeissMod/baf/bg2000.BAF~
+
+BEGIN ~Keep gold & all equipment at beginning of Siege of Dragonspear (+ remove free rests from most chapter starts)~
+
+EXTEND_TOP ~bd7100.bcs~  ~WeissMod/baf/sodgold/bd7100.BAF~
+EXTEND_TOP ~bd3000.bcs~  ~WeissMod/baf/sodgold/bd3000.BAF~
+EXTEND_TOP ~bd0103.bcs~  ~WeissMod/baf/sodgold/bd0103.BAF~    
+COPY ~WeissMod/itm/DWNOTE99.itm~ ~override/DWNOTE99.itm~
+  SAY NAME1 @100
+  SAY NAME2 @101
+  SAY UNIDENTIFIED_DESC @102
+  SAY DESC @103
+  
+BEGIN ~Keep gold between Siege of Dragonspear and Baldur's Gate 2~
+EXTEND_TOP ~ar0602.bcs~  ~WeissMod/baf/bg2gold/ar0602.BAF~
+EXTEND_TOP ~bd6200.bcs~  ~WeissMod/baf/bg2gold/bd6200.BAF~
+
+BEGIN ~Half cost~
+SUBCOMPONENT ~Pay gold to rest based on number of rests~
+EXTEND_TOP ~baldur.bcs~  ~WeissMod/baf/halfrestcount/baldur.BAF~    
+EXTEND_TOP ~bdbaldur.bcs~  ~WeissMod/baf/halfrestcount/baldur.BAF~ 
+EXTEND_TOP ~bg2600.bcs~  ~WeissMod/baf/restcountstart/bg2600.BAF~
+EXTEND_TOP ~ar0602.bcs~  ~WeissMod/baf/restcountstart/ar0602.BAF~
+BEGIN ~Normal cost~
+SUBCOMPONENT ~Pay gold to rest based on number of rests~
+EXTEND_TOP ~baldur.bcs~  ~WeissMod/baf/normalrestcount/baldur.BAF~    
+EXTEND_TOP ~bdbaldur.bcs~  ~WeissMod/baf/normalrestcount/baldur.BAF~ 
+EXTEND_TOP ~bg2600.bcs~  ~WeissMod/baf/restcountstart/bg2600.BAF~
+EXTEND_TOP ~ar0602.bcs~  ~WeissMod/baf/restcountstart/ar0602.BAF~
+BEGIN ~Double cost~
+SUBCOMPONENT ~Pay gold to rest based on number of rests~
+EXTEND_TOP ~baldur.bcs~  ~WeissMod/baf/doublerestcount/baldur.BAF~   
+EXTEND_TOP ~bdbaldur.bcs~  ~WeissMod/baf/doublerestcount/baldur.BAF~  
+EXTEND_TOP ~bg2600.bcs~  ~WeissMod/baf/restcountstart/bg2600.BAF~
+EXTEND_TOP ~ar0602.bcs~  ~WeissMod/baf/restcountstart/ar0602.BAF~

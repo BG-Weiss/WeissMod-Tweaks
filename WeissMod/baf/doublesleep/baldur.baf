@@ -1,0 +1,475 @@
+IF
+	GlobalTimerExpired("weiss_gold_rest_increase","GLOBAL")
+THEN
+RESPONSE #100
+	DisplayString(Myself,~Times are getting tougher. It will cost more gold to rest now.~)
+	IncrementGlobal("weiss_gold_increases","GLOBAL",1)
+	SetGlobalTimer("weiss_gold_rest_increase","GLOBAL",144000)
+	Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldLT(100)
+	Global("weiss_gold_increases","GLOBAL",0)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(99)
+	Global("weiss_gold_increases","GLOBAL",0)
+THEN
+RESPONSE #100
+	TakePartyGold(100)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldLT(1000)
+	Global("weiss_gold_increases","GLOBAL",1)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(999)
+	Global("weiss_gold_increases","GLOBAL",1)
+THEN
+RESPONSE #100
+	TakePartyGold(1000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldLT(2000)
+	Global("weiss_gold_increases","GLOBAL",2)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(1999)
+	Global("weiss_gold_increases","GLOBAL",2)
+THEN
+RESPONSE #100
+	TakePartyGold(2000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldLT(300)
+	Global("weiss_gold_increases","GLOBAL",3)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(2999)
+	Global("weiss_gold_increases","GLOBAL",3)
+THEN
+RESPONSE #100
+	TakePartyGold(3000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldLT(4000)
+	Global("weiss_gold_increases","GLOBAL",4)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(3999)
+	Global("weiss_gold_increases","GLOBAL",4)
+THEN
+RESPONSE #100
+	TakePartyGold(4000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldLT(6000)
+	Global("weiss_gold_increases","GLOBAL",5)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(5999)
+	Global("weiss_gold_increases","GLOBAL",5)
+THEN
+RESPONSE #100
+	TakePartyGold(6000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldLT(9000)
+	Global("weiss_gold_increases","GLOBAL",6)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(8999)
+	Global("weiss_gold_increases","GLOBAL",6)
+THEN
+RESPONSE #100
+	TakePartyGold(9000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldLT(12000)
+	Global("weiss_gold_increases","GLOBAL",7)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(11999)
+	Global("weiss_gold_increases","GLOBAL",7)
+THEN
+RESPONSE #100
+	TakePartyGold(12000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+
+IF
+	PartyRested()
+	PartyGoldLT(15000)
+	Global("weiss_gold_increases","GLOBAL",8)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(14999)
+	Global("weiss_gold_increases","GLOBAL",8)
+THEN
+RESPONSE #100
+	TakePartyGold(15000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldLT(18000)
+	Global("weiss_gold_increases","GLOBAL",9)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(17999)
+	Global("weiss_gold_increases","GLOBAL",9)
+THEN
+RESPONSE #100
+	TakePartyGold(18000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+
+IF
+	PartyRested()
+	PartyGoldLT(22000)
+	Global("weiss_gold_increases","GLOBAL",10)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(21999)
+	Global("weiss_gold_increases","GLOBAL",10)
+THEN
+RESPONSE #100
+	TakePartyGold(22000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldLT(26000)
+	Global("weiss_gold_increases","GLOBAL",11)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(25999)
+	Global("weiss_gold_increases","GLOBAL",11)
+THEN
+RESPONSE #100
+	TakePartyGold(26000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldLT(30000)
+	Global("weiss_gold_increases","GLOBAL",12)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(29999)
+	Global("weiss_gold_increases","GLOBAL",12)
+THEN
+RESPONSE #100
+	TakePartyGold(30000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldLT(35000)
+	Global("weiss_gold_increases","GLOBAL",13)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(34999)
+	Global("weiss_gold_increases","GLOBAL",13)
+THEN
+RESPONSE #100
+	TakePartyGold(35000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldLT(40000)
+	Global("weiss_gold_increases","GLOBAL",14)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(39999)
+	Global("weiss_gold_increases","GLOBAL",14)
+THEN
+RESPONSE #100
+	TakePartyGold(40000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldLT(50000)
+	GlobalGT("weiss_gold_increases","GLOBAL",14)
+THEN
+RESPONSE #100
+	ChangeStat(Player1,30,12,1)
+	ChangeStat(Player2,30,12,1)
+	ChangeStat(Player3,30,12,1)
+	ChangeStat(Player4,30,12,1)
+	ChangeStat(Player5,30,12,1)
+	ChangeStat(Player6,30,12,1)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+Continue()
+END
+
+IF
+	PartyRested()
+	PartyGoldGT(49999)
+	GlobalGT("weiss_gold_increases","GLOBAL",14)
+THEN
+RESPONSE #100
+	TakePartyGold(50000)
+	DisplayString(Myself,~Four more hours of beauty sleep added.~)
+	AdvanceTime(1200) 
+	Continue()
+END

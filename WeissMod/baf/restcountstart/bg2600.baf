@@ -1,0 +1,9 @@
+IF
+	!Global("weiss_rest_count_started","GLOBAL",1)
+THEN
+RESPONSE #100
+	SetGlobal("weiss_rest_count_started","GLOBAL",1)
+	SetGlobal("weiss_rest_count","GLOBAL",0)
+	SetGlobal("weiss_alert_rest_count","GLOBAL",0)
+	Continue()
+END
