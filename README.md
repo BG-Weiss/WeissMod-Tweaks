@@ -3,7 +3,7 @@ Author: Weiss (cjweiss.com)
 Version: 1.0
 
 PREAMBLE
-If you like this mod and like reading, consider supporting me by visiting cjweiss.com or buying A Broken Clock Never Boils on Amazon, Kubo, Barnes & Noble, Apple Books, or Smashwords.
+I'm an author. If you like this mod and like reading, consider supporting me by visiting cjweiss.com or buying A Broken Clock Never Boils on Amazon, Kubo, Barnes & Noble, Apple Books, or Smashwords.
 
 OVERVIEW
 The purpose of this mod is to fix a couple things that bugged me: namely, the ease of resting and losing both gold and equipped items at the start of Siege of Dragonspear. I prefer full trilogy runs, so I highly recommend these mods with EET. I think COMPONENT 1+4 will work without Enhanced Editions, but I have no intention of supporting/testing it.
