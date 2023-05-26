@@ -51,23 +51,24 @@ COMPONENT 4: Pay gold to rest based on the number of rests
 
 Similar to COMPONENT 1, this is an alternative method to the rising gold costs of rest. You can use it in place of or in combination with the time-based rest cost. There is also the option to halve or double these costs during install.
 
-# Rests	GOLD COST
-0	50
-4	500
-8	1000
-12	1500
-16	2000
-20	3000
-24	4500
-28	6000
-34	7500
-40	9000
-44	11000
-48	13000
-52	15000
-56	17500
-60	20000
-64+	25000
+REST COUNT	|	GOLD COST
+---	|	---
+0	| 50
+4 |	500
+8 |	1000
+12  |	1500
+16  |	2000
+20  |	3000
+24  |	4500
+28  |	6000
+34  |	7500
+40  |	9000
+44  |	11000
+48  |	13000
+52  |	15000
+56  |	17500
+60  |	20000
+64+ |	25000
 
 RECOMMENDATIONS/ROLEPLAY
 
