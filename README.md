@@ -17,23 +17,24 @@ The values are intended to force more difficult decisions on when to rest, such 
 
 The default values are below:
 
-DAYS	GOLD COST
-0	50
-20	500
-40	1000
-60	1500
-80	2000
-100	3000
-120	4500
-140	6000
-160	7500
-180	9000
-200	11000
-220	13000
-240	15000
-260	17500
-280	20000
-300+	25000
+DAYS	|	GOLD COST
+---	|	---
+0	| 50
+20	|	500
+40	|	1000
+60	|	1500
+80	|	2000
+100	|	3000
+120	|	4500
+140	|	6000
+160	|	7500
+180	|	9000
+200	|	11000
+220	|	13000
+240	|	15000
+260	|	17500
+280	|	20000
+300+	|	25000
 
 There are 6 options total. You can halve or double the above values, and choose to add (or not) the 4-hour beauty sleep component. For all options, when you travel to Balduran Island for the first time, you'll go back on this table by 1 tier. This is to counteract the days you naturally lose in traveling there.
 
