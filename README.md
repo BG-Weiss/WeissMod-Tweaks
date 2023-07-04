@@ -1,4 +1,4 @@
-Weiss Tweaks
+WeissMod Tweaks
 Author: Weiss (cjweiss.com)
 Version: 1.0
 
