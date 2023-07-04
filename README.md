@@ -70,6 +70,11 @@ REST COUNT	|	GOLD COST
 60  |	20000
 64+ |	25000
 
+COMPONENT 5: Nerf Time Stop
+This changes Time Stop to the following effects: The caster may cast spells without casting time like Improved Alacrity for 3 rounds. They also will gain 2 attacks per round, a +4 THAC0 bonus, and a +4 AC bonus.
+
+Reason: Time Stop is the worst spell in the game, offering no counterplay other than "kill the wizard". I don't find it fun to use against the AI, and I don't find it fun standing around while the AI casts spells either. Hence, the nerf. I've tried to keep the spirit of it alive. It will work with SCS, but it obviously does nerf HLA spellcasting. SCS casters will no longer use Improved Alacrity after Time Stop.
+
 RECOMMENDATIONS/ROLEPLAY
 
 Think of the rising resting costs as mounting repair bills, reagent gathering, antagonistic subterfuge, escalating darkness, or your Bhaalspawn taint needing more lavish feasts to survive.
