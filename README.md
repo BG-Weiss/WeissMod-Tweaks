@@ -6,7 +6,7 @@ PREAMBLE
 I'm an author. If you like this mod and like reading, consider supporting me by visiting cjweiss.com or buying A Broken Clock Never Boils on Amazon, Kubo, Barnes & Noble, Apple Books, or Smashwords.
 
 OVERVIEW
-The purpose of this mod is to fix a couple things that bugged me: namely, the ease of resting and losing both gold and equipped items at the start of Siege of Dragonspear. I prefer full trilogy runs, so this is balanced purely around a EET (with or without SoD). However, the mod will work with just BGEE or BG2EE. I think COMPONENT 1+4 should work without Enhanced Editions, but I have no intention of supporting/testing it.
+The purpose of this mod is to fix a couple things that bugged me: namely, the ease of resting and losing both gold and equipped items at the start of Siege of Dragonspear. I prefer full trilogy runs, so this is balanced purely around EET (whether skipping or playing SoD). However, the mod will work with just BGEE or BG2EE. I think COMPONENT 1+4 should work without Enhanced Editions, but I have no intention of supporting/testing it.
 
 There are currently five components.
 
