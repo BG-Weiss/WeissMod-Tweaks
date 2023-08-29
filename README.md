@@ -8,7 +8,7 @@ I'm an author. If you like this mod and like reading, consider supporting me by 
 OVERVIEW
 The purpose of this mod is to fix a couple things that bugged me: namely, the ease of resting and losing both gold and equipped items at the start of Siege of Dragonspear. I prefer full trilogy runs, so I highly recommend these mods with EET. I think COMPONENT 1+4 will work without Enhanced Editions, but I have no intention of supporting/testing it.
 
-There are currently four components.
+There are currently five components.
 
 COMPONENT 1: Pay gold to rest based on elapsed time
 The premise of this mod is to add a gold cost to rest rather than hard limiting resting in some way. The amount you have to pay goes up every 20 days of in-game time, the costs capping out at 300 days. If you don't have enough gold, you get a massive fatigue penalty (-6 luck) until proper resting. Additionally, the recommended option adds 4 hours of "beauty sleep" rest. The purpose of this is to increase the "cost" of resting and bring the ratio of time spent resting vs. traveling into closer alignment. These costs are incurred whether sleeping at an inn or in the wild.
