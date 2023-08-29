@@ -1,6 +1,6 @@
 WeissMod Tweaks
 Author: Weiss (cjweiss.com)
-Version: 1.1
+Version: 1.2
 
 PREAMBLE
 I'm an author. If you like this mod and like reading, consider supporting me by visiting cjweiss.com or buying A Broken Clock Never Boils on Amazon, Kubo, Barnes & Noble, Apple Books, or Smashwords.
